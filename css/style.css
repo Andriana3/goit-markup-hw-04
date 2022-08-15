@@ -155,9 +155,11 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(#000000, #2f303a 40%),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/Img.svg);
-
   /* background-image: linear-gradient(#000000, #2f303a 40%) .
     url("../images/Img.svg"); */
 }
@@ -483,7 +485,8 @@ p {
 .buton-name:focus {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
-  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* cекція портфоліо */
@@ -513,11 +516,6 @@ p {
   margin-right: 0;
 }
 
-.card-set:hover,
-.card-set:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .card-set:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -549,4 +547,9 @@ p {
 }
 .projects {
   text-decoration: none;
+}
+.projects :hover,
+.projects :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
