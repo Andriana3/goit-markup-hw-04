@@ -155,13 +155,13 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--gradient-color),
+      var(--gradient-color)
     ),
-    url(../images/Img.svg);
-  /* background-image: linear-gradient(#000000, #2f303a 40%) .
-    url("../images/Img.svg"); */
+    url(../images/Imghero.jpg);
 }
 .hero {
   font-weight: 900;
@@ -226,7 +226,7 @@ p {
 
 .feature {
   background: var(--primary-background-color);
-  width: 270px;
+
   height: 120px;
   display: flex;
   justify-content: center;
@@ -547,9 +547,10 @@ p {
 }
 .projects {
   text-decoration: none;
+  display: block;
 }
-.projects :hover,
-.projects :focus {
+.projects:hover,
+.projects:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
